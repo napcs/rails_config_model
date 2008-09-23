@@ -1,0 +1,18 @@
+== 1.2.0 / 2008-01-23
+
+* Now generates html.erb instead of .rhtml for the edit form.
+
+== 1.1.0 / 2007-07-16
+
+* Specify model name and migration fields via generator
+* Updated tests
+* fixed syntax error in the controller template
+* Rewrote the generator
+* Refactored configuration creation on load
+* updated tests
+
+== 1.0.0 / 2007-07-16
+
+* Initial release - generating configuration model
+  * Birthday!
+

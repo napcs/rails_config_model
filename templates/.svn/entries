@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="515"
+   name=""
+   committed-date="2007-07-16T18:54:00.625000Z"
+   url="svn://servers.bphogan.com/rails_config_model/trunk/templates"
+   last-author="brianhogan"
+   kind="dir"
+   repos="svn://servers.bphogan.com"
+   revision="515"/>
+<entry
+   committed-rev="517"
+   name="unit_test.rb"
+   text-time="2007-07-17T00:29:42.000000Z"
+   committed-date="2007-07-17T00:48:36.562500Z"
+   checksum="47bb954700face830ab6ab695609be5c"
+   last-author="brianhogan"
+   kind="file"
+   prop-time="2007-07-16T18:47:03.000000Z"
+   revision="517"/>
+<entry
+   committed-rev="517"
+   name="functional_test.rb"
+   text-time="2007-07-17T00:36:32.000000Z"
+   committed-date="2007-07-17T00:48:36.562500Z"
+   checksum="9d32d5b70dd79edb49af7622e34611a0"
+   last-author="brianhogan"
+   kind="file"
+   prop-time="2007-07-16T18:47:03.000000Z"
+   revision="517"/>
+<entry
+   committed-rev="517"
+   name="configuration.rb"
+   text-time="2007-07-17T00:22:25.000000Z"
+   committed-date="2007-07-17T00:48:36.562500Z"
+   checksum="c736bb2136b8bb3dee73d6273e82c814"
+   last-author="brianhogan"
+   kind="file"
+   prop-time="2007-07-16T18:47:03.000000Z"
+   revision="517"/>
+<entry
+   committed-rev="517"
+   name="fixtures.yml"
+   text-time="2007-07-16T20:32:06.000000Z"
+   committed-date="2007-07-17T00:48:36.562500Z"
+   checksum="856b224898bf81211c68353d7d8653cf"
+   last-author="brianhogan"
+   kind="file"
+   prop-time="2007-07-16T18:47:03.000000Z"
+   revision="517"/>
+<entry
+   committed-rev="517"
+   name="edit.rhtml"
+   text-time="2007-07-16T20:33:32.000000Z"
+   committed-date="2007-07-17T00:48:36.562500Z"
+   checksum="9aa55990d2cb8833c7fb77a13b69277c"
+   last-author="brianhogan"
+   kind="file"
+   prop-time="2007-07-16T18:47:03.000000Z"
+   revision="517"/>
+<entry
+   committed-rev="517"
+   name="migration.rb"
+   text-time="2007-07-16T19:45:23.000000Z"
+   committed-date="2007-07-17T00:48:36.562500Z"
+   checksum="ce0817700ec27f10f7d07f998bff6991"
+   last-author="brianhogan"
+   kind="file"
+   prop-time="2007-07-16T18:47:03.000000Z"
+   revision="517"/>
+<entry
+   committed-rev="517"
+   name="configuration_controller.rb"
+   text-time="2007-07-17T00:33:17.000000Z"
+   committed-date="2007-07-17T00:48:36.562500Z"
+   checksum="83692c2ebfc30feb1b5c354aadbd766c"
+   last-author="brianhogan"
+   kind="file"
+   prop-time="2007-07-16T18:47:03.000000Z"
+   revision="517"/>
+</wc-entries>

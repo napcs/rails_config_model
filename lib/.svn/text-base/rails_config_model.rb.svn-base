@@ -1,0 +1,39 @@
+
+# ==System Configuration
+# Copyright © 2007 Brian Hogan
+# Distributed under the MIT license.
+
+# ==Setup and overview
+# Generate a new configuration system for your application by executing the generator from the root of your application.
+# 
+#   ruby script\generate configuration
+#   
+# Once installed, you modify the generated migration to include the fields you want to configure. There are a few defaults there to give you an idea.
+# 
+# The generator will create a controller mounted at /configuration so you can edit your configurations.  Modify this as needed to provide for security.
+#  
+# ===The Edit form
+# The application's edit form uses the *form* helper method to auto-generate the fields. This may not be optimal and you may wish to actually write your own view instead. See app/views/configuration/edit.rhtml for more details.
+# 
+# ==Usage
+# Configuration is simply a model for this table. It is designed to handle a single row of a table, and so additional rows cannot be created. 
+# If you have a table that looks like this:
+#    
+#    id
+#    contact_email
+#    contact_name
+#    
+# You simply grab the row from the table
+# 
+#     @configuration = Configuration.load
+#     
+# and then grab the values out.
+# 
+#     email = @configuration.contact_email
+# 
+# 
+
+
+class RailsConfigModel
+  VERSION = '1.0.0'
+end

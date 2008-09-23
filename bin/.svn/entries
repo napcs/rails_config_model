@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="515"
+   name=""
+   committed-date="2007-07-16T18:54:00.625000Z"
+   url="svn://servers.bphogan.com/rails_config_model/trunk/bin"
+   last-author="brianhogan"
+   kind="dir"
+   repos="svn://servers.bphogan.com"
+   revision="515"/>
+<entry
+   committed-rev="515"
+   name="rails_config_model"
+   text-time="2007-07-16T16:08:21.000000Z"
+   committed-date="2007-07-16T18:54:00.625000Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="brianhogan"
+   kind="file"/>
+</wc-entries>

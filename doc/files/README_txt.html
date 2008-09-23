@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: README.txt</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>README.txt</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>README.txt
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Tue Oct 30 10:26:26 -0500 2007</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+    <div id="diagram">
+      <map id="map" name="map">
+</map>
+<img src="../dot/f_0.png" usemap="#map" border="0" alt="dot/f_0.png">
+    </div>
+
+    <div id="description">
+      <h2>rails_config_model</h2>
+<pre>
+    by Brian Hogan
+    http://rconfig.rubyforge.org/
+    http://www.napcs.com/products/rails/rails_config_model_generator
+</pre>
+<h2>DESCRIPTION:</h2>
+<p>
+Creates a configuration controller and model that can be used to quickly
+create configuration table for your system so you can store system-wide
+variables that you&#8216;d like the user to be able to set.
+</p>
+<p>
+This gem contains a generator to create a simple configuration model,
+migration, and interface for your application, complete with working tests.
+</p>
+<h2>FEATURES</h2>
+<ul>
+<li>Generates the controller, model, and the associated files.
+
+</li>
+<li>You can specify the model name and set the fields for the migrations via
+the generator.
+
+</li>
+</ul>
+<h2>SYNOPSIS:</h2>
+<h3>Setup and overview</h3>
+<p>
+Generate a new configuration system for your application by executing the
+generator from the root of your application.
+</p>
+<pre>
+   ruby script\generate rails_config_model Configuration
+</pre>
+<p>
+You can also specify the model fields much like the scaffold_resource
+generator
+</p>
+<pre>
+  ruby script/generate rails_config_model Configuration contact_email:string site_name:string welcome_message:text max_number_of_events:integer
+</pre>
+<p>
+Once installed, you modify the generated migration to include the fields
+you want to configure. There are a few defaults there to give you an idea.
+</p>
+<p>
+The generator will create a controller mounted at /configuration so you can
+edit your configurations. Modify this as needed to provide for security.
+</p>
+<h3>The Edit form</h3>
+<p>
+The application&#8216;s edit form uses the <b>form</b> helper method to
+auto-generate the fields. This may not be optimal and you may wish to
+actually write your own view instead. See
+app/views/configuration/edit.rhtml for more details.
+</p>
+<h3>Usage</h3>
+<p>
+Configuration is simply a model for this table. It is designed to handle a
+single row of a table, and so additional rows cannot be created. If you
+have a table that looks like this:
+</p>
+<pre>
+    id
+    contact_email
+    site_name
+    welcome_message
+    max_number_of_events
+</pre>
+<p>
+You simply grab the row from the table
+</p>
+<pre>
+     @configuration = Configuration.load
+</pre>
+<p>
+and then grab the values out.
+</p>
+<pre>
+     email = @configuration.contact_email
+</pre>
+<p>
+Or save new values
+</p>
+<pre>
+  @configuration = Configuration.load
+  @configuration.welcome_message = &quot;This is the default message.&quot;
+  @configuraiton.save
+</pre>
+<h2>REQUIREMENTS:</h2>
+<ul>
+<li>Rails, a database, and a reason to use this.
+
+</li>
+</ul>
+<h2>INSTALL:</h2>
+<p>
+Download and sudo gem install rails_config_model_generator
+</p>
+<h2>LICENSE:</h2>
+<p>
+(The MIT License)
+</p>
+<p>
+Copyright (c) 2007 Brian P. Hogan
+</p>
+<p>
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+&#8216;Software&#8217;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+</p>
+<p>
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+</p>
+<p>
+THE SOFTWARE IS PROVIDED &#8216;AS IS&#8217;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+</p>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

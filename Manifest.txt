@@ -1,0 +1,14 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+lib/rails_config_model.rb
+rails_config_model_generator.rb
+templates/configuration.rb
+templates/configuration_controller.rb
+templates/edit.rhtml
+templates/fixtures.yml
+templates/functional_test.rb
+templates/migration.rb
+templates/unit_test.rb
+
