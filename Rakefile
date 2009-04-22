@@ -19,6 +19,8 @@ Hoe.new('rails_config_model_generator', RailsConfigModel::VERSION) do |p|
   p.author = ["Brian Hogan"]
   #p.remote_rdoc_dir = ''
   # p.summary = 'FIX'
+  p.readme_file= "README.rdoc"
+  p.extra_rdoc_files = FileList['*.rdoc']
   p.description = p.paragraphs_of('README.txt', 2..10).join("\n\n")
   p.url = "http://rconfig.rubyforge.org/"
   p.changes = p.paragraphs_of('History.txt', 0..1).join("\n\n")
