@@ -29,6 +29,6 @@ class <%=class_name %> < ActiveRecord::Base
    
    # Prevents the destruction or creation of more than one record.
    def check_for_existing
-        return false if <%=class_name %>.find(:all).size >= 1 
+        return false if <%=class_name %>.count >= 1 
     end
 end

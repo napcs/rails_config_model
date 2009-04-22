@@ -1,3 +1,7 @@
+== 1.2.1 / 2009-04-21
+
+ * Delete protection code uses count instead of find(:all).size. Man that was dumb.
+
 == 1.2.0 / 2008-01-23
 
 * Now generates html.erb instead of .rhtml for the edit form.
