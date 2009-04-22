@@ -1,6 +1,6 @@
 History.txt
 Manifest.txt
-README.txt
+README.rdoc
 Rakefile
 lib/rails_config_model.rb
 rails_config_model_generator.rb
