@@ -1,8 +1,8 @@
-require File.dirname(__FILE__) + '/../test_helper'
+require test_helper
 
-class <%=class_name %>Test < Test::Unit::TestCase
-
- fixtures :<%=table_name %>
+class <%=class_name %>Test < ActiveSupport::TestCase
+ # uncomment this if you need it
+ # fixtures :<%=table_name %>
 
  # The assumption here is that the  record was created already.
  # Once there is a record, it should not allow the creation of an existing one.

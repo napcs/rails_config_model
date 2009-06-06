@@ -1,3 +1,6 @@
+== 1.2.2 / 2009-06-06
+* Generated tests now compatible with Rails 2.3x. If you want to use this on older versions of Rails, use a previous version or manually change the tests
+
 == 1.2.1 / 2009-04-21
 
  * Delete protection code uses count instead of find(:all).size. Man that was dumb.

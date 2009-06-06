@@ -1,18 +1,8 @@
-require File.dirname(__FILE__) + '/../test_helper'
-require '<%=controller_file_name %>_controller'
+require test_helper
 
-# Re-raise errors caught by the controller.
-class <%=controller_class_name %>Controller; def rescue_action(e) raise e end; end
-
-class <%=controller_class_name %>ControllerTest < Test::Unit::TestCase
-
-  fixtures :<%=table_name %>
-
-  def setup
-    @controller = <%=controller_class_name %>Controller.new
-    @request    = ActionController::TestRequest.new
-    @response   = ActionController::TestResponse.new
-  end
+class <%=controller_class_name %>ControllerTest < ActionController::TestCase
+  # Uncomment if you need this
+  # fixtures :<%=table_name %>
 
   def test_index
     get "index"
